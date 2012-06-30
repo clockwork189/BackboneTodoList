@@ -13,8 +13,9 @@
     <script src="js/backbone-min.js"></script>
 	<script type="text/template" id="newListTemplate">
 		<div>
-			<%= label %>: 
-			<input type="text" id="ListName" name="ListName" /> <input type="button" value="Submit" id="submitButton" onClick="CreateNewList();"/>
+			Please Enter your List Name: 
+			<input type="text" id="ListName" name="ListName" /> 
+			<input type="button" value="Submit" id="submitButton"/>
 		</div>
 	</script>
 	<script type="text/template" id="allListsTemplate">
@@ -22,7 +23,7 @@
 			<%= title %>
 		</div>
 	</script>
-	<script src="js/app.js"></script>
+
 </head>
 <body>
 	<div data-role="page">
@@ -30,12 +31,14 @@
 			<h1>EasyTodo</h1>
 		</div>
 		<div data-role="content">
-			<a href="#" onclick="AddList();" data-role="button">New List</a>
-			<div id="addListDiv"></div>
-			<div id="viewListDiv"></div>
+			<div id="todoApp">
+				<div id="addListDiv"></div>
+				<a href="#" id="newList" data-role="button">New List</a>
+				<div id="viewListDiv"></div>
+			</div>
 		</div>
-		<div data-role="footer">...</div> 
+		<div data-role="footer"><h1>Clockwork189 apps</h1></div> 
 	</div>
-	<script src="js/functions.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
