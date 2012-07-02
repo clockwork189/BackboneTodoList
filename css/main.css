@@ -1,0 +1,194 @@
+/* index
+-------------------------------------------------------------------------------------- */
+
+/*
+
+* Filename: 			style.css
+* Description: 			global CSS (master)
+* Version:          	        1.0.0 (YYYY-MM-DD)
+* Website:			website-url
+* Author:			authorname
+
+== STRUCTURE ============================================================================
+
+* Page width:			990 px
+* Number of columns:	        1
+
+*/
+  
+
+
+/* colorscheme
+--------------------------------------------------------------------------------------- */
+
+/*
+white (bg): 	   		   	#fff
+grey (intro text):			#333
+grey (h3 headlines +contact bg)    	#a3a3a3
+black (text): 				#000
+red (link active): 		   	#670001
+dark red (link hover + visited): 	#431611
+*/
+
+
+
+/* Browser CSS-Reset
+--------------------------------------------------------------------------------------- */
+/* Eric Meyer's Reset Reloaded */
+/* http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h3, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, h3, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	}	
+/* remember to define focus styles! */
+:focus {outline: 0;}
+body {
+	line-height: 1;
+	color: white;
+	background: black;
+	}	
+ol, ul {list-style: none;}	
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: separate; border-spacing: 0;}	
+caption, th, td {text-align: left; font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+/* images and linked images without border */
+img, a img {border: 0;}
+
+
+/* globals 
+--------------------------------------------------------------------------------------- */
+
+html {background: #fff;}
+
+body {
+	background: #fff url(image.jpg) no-repeat left top;
+	color: #000;
+	display: table;
+	font-size: 100%;  /* reduces the body text from the 16px default (common to most browsers and OS set-ups) down to the 12px. */
+	width: 100%; 				 /* This rule is primarily there for Internet Explorer 6 and below on Windows */
+	}
+
+html>body {
+	font-size: 16px;  /* sets the text size specifically and is ignored by IE6, but used by Firefox, Safari, IE7, Opera */
+	}
+
+a { 
+	border-bottom: 1px solid #670001;
+	padding-bottom: 1px; 
+	text-decoration: none;
+	}
+
+a:link, a:visited {color: #670001;}
+
+a:hover {
+	background: #431611;
+	border-bottom: 0;
+	color: #fff;
+	}
+
+
+/* Typography
+--------------------------------------------------------------------------------------- */
+p {
+	font: 1em/1.75em Georgia, "Times New Roman", Times, serif;
+	margin: 0;
+	text-indent:0; 
+	}
+	 
+p+p {text-indent:2em;}
+
+.first {text-indent: 0;}
+  	                     
+
+h1 {
+	border-bottom: 1px dotted #a3a3a3;
+	font: 3em/1em "Baskerville", "Linotype Palatino", Times, Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 80px;
+	margin-left: 310px;
+	margin-bottom: 1em;
+	padding:0 30px 30px 20px;
+	}
+
+h2 {
+
+	font: 2.5em/1.75em Georgia, "Times New Roman", Times, serif;
+	margin-top: 1em;
+	margin-bottom: 0em;
+	}
+
+h3 {
+	color: #a3a3a3;
+	font: 1.88em/0.934em Georgia, "Times New Roman", Times, serif;
+	margin-top: 1.068em;
+	margin-bottom: 0em;
+	}
+
+h3 {
+	color: #fff;
+	font: 2em/1.5em "Baskerville", "Linotype Palatino", Times, Georgia, "Times New Roman", serif;
+	font-style: italic;
+	}
+
+h5 {color: #ccc; font: 1.25em/1.75em Georgia, "Times New Roman", Times, serif;}  
+
+.amp {
+	font: 1em/1em "Baskerville", "Linotype Palatino", Times, Georgia, "Times New Roman", serif;
+	font-style: italic;
+	}  /* use the best Ampersand */
+
+
+	h3 {
+		font-weight: bold;
+		font-size: 20px;
+		margin-top:20px;
+		color: gray;
+	}
+	
+	ul { list-style: circle; margin-top:10px; margin-bottom:10px; margin-left:20px;}
+	li { margin-bottom:5px; line-height:19px;}
+/* layout elements
+--------------------------------------------------------------------------------------- */ 
+
+/* wrapper */
+   
+
+/* nav */
+                               
+
+/* content */
+
+
+/* footer */
+
+                 
+	
+/* end of this stylesheet
+-------------------------------------------------------------------------------------- */
+	body{
+		width:960px;
+		margin: 0 auto;
+		font-family: 'Gentium Basic', serif;
+	}
+	ol {
+		list-style: decimal;
+		margin-left: 20px;
+	}

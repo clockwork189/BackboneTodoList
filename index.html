@@ -6,38 +6,37 @@
     </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.mobile-1.1.0.min.js"></script>
+	<link rel="stylesheet" href="css/main.css" />
+    <script src="js/zepto.min.js"></script>
     <script src="js/underscore-min.js"></script>
     <script src="js/backbone-min.js"></script>
-	<script type="text/template" id="newListTemplate">
+	<script type="text/template" id="ListItemTemplate">
 		<div>
-			Please Enter your List Name: 
-			<input type="text" id="ListName" name="ListName" /> 
-			<input type="button" value="Submit" id="submitButton"/>
-		</div>
+			<div class='itemTitle <% if(isDone) print('complete')%>'>
+				<%= title %>
+			</div>
+		    <div><%= dateCreated %></div>
+	  	</div>
 	</script>
 	<script type="text/template" id="allListsTemplate">
 		<div>
-			<%= title %>
+			<strong><%= title %></strong><br/>
+			<%= description %><br/>
+			<%= dateCreated %>
 		</div>
 	</script>
-
+	<script type="text/template" id="newListTemplate">
+		List Name: <input type='text' id='newListTitle' /><br/>
+		Description: <input type='text' id='newListDescription' /><br/>
+		<button id='submitlist'>Submit</button>
+	</script>
 </head>
 <body>
-	<div data-role="page">
-		<div data-role="header">
-			<h1>EasyTodo</h1>
-		</div>
-		<div data-role="content">
-			<div id="todoApp">
-				<div id="addListDiv"></div>
-				<a href="#" id="newList" data-role="button">New List</a>
-				<div id="viewListDiv"></div>
-			</div>
-		</div>
-		<div data-role="footer"><h1>Clockwork189 apps</h1></div> 
+	<div id="todoApp">
+		<h2>EasyTodo</h2>
+		<div id="addListDiv"></div>
+		<button id="newList">New List</button>
+		<div id="viewListDiv"></div>
 	</div>
 	<script src="js/app.js"></script>
 </body>
