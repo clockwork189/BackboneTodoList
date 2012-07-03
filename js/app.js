@@ -24,13 +24,6 @@ var TodoRouter = new (Backbone.Router.extend({
 	EditTodoList: function(id) {
 		alert("edit list " + id);		
 	},
-	AddTodoItem: function() {
-		//e.preventDefault();
-	},
-	AddTodoList: function(e) {
-		var newList = new TodoNewListView;
-		alert("add new list");
-	},
 	RemoveTodoItem: function(id) {
 		alert("remove item " + id);				
 	},
@@ -85,7 +78,7 @@ var TodoListView = Backbone.View.extend({
 		this.render();
 	},
 	render: function() {
-		this.$el.append(this.template(this.model.toJSON()));
+		this.$el.append(this.template(this.model.toJSON())).show("slow");
 	}
 });
 

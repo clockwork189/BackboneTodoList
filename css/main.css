@@ -192,3 +192,49 @@ h5 {color: #ccc; font: 1.25em/1.75em Georgia, "Times New Roman", Times, serif;}
 		list-style: decimal;
 		margin-left: 20px;
 	}
+#todoApp {
+	margin: 0 auto;
+	width: 700px;
+	font-family: Arial;
+	text-align:center;
+}
+
+#viewListDiv {
+	margin: 0 auto;
+	width: 600px;
+	font-family: Arial;
+	font-size: 1em;
+	background-color: #EEE;
+	border: 1px solid gray;
+	display:none;
+	padding:10px;
+}
+
+.listStruct {
+	border: 1px dotted #C8C8C8;
+	margin-bottom:5px;
+	padding:5px;
+	text-align:left;
+}
+
+.listStruct:hover {
+	background-color: #D8D8D8;
+	cursor: pointer;
+}
+
+.listTitle {
+	font-size: 22px;
+	font-weight: 700;
+	color: #787878;
+}
+
+.listDescription {
+	font-size: 14px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.listDateCreated {
+	font-size: 10px;
+	color: gray;
+}
